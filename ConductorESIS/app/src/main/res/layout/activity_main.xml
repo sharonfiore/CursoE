@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <fragment
+        android:id="@+id/mapa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+    <EditText
+        android:id="@+id/miedt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="Sharon xD"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnaviso"
+        android:text="Avisar Cercanía"
+        android:visibility="invisible"
+        android:onClick="miaviso"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnfinalizar"
+        android:text="Finalizar"
+        android:visibility="invisible"
+        android:onClick="mifinalizar"/>
+</LinearLayout>
